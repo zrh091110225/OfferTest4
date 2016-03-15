@@ -10,7 +10,7 @@ import java.util.Arrays;
  * 请找出数组中任意一个重复的数字。
  * 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是重复的数字2或者3。
  */
-public class Deplicate {
+public class Duplicate {
     public boolean duplicate(int numbers[],int length,int [] duplication) {
         duplication[0]=-1;
         if(length == 0){
@@ -33,6 +33,6 @@ public class Deplicate {
     public static void main(String[] args) {
         int[] value = {2,4,3,1,4};
         int[] duplication = new int[value.length/2];
-        System.out.println(new Deplicate().duplicate(value,value.length,duplication));
+        System.out.println(new Duplicate().duplicate(value,value.length,duplication));
     }
 }
